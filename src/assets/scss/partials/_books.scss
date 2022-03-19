@@ -1,0 +1,142 @@
+.books {
+    h1 {
+      border-bottom:2px solid;
+    }
+    .plus_icon {
+      width: 1.7rem;
+      height: 1.7rem;
+      stroke: #01589d;
+      stroke-width: 2.5px;
+      cursor: pointer;
+    }
+    label {
+      cursor: pointer;
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+}
+
+.booklist {
+    .booklist_item{
+        margin-left: 12px;
+      }
+}
+
+
+.book {
+    label {
+      font-size: 1.4rem;
+      font-weight: 500;
+    }
+    .edit {
+      margin-right: 1rem;
+      cursor: pointer;
+    }
+    .trash2 {
+      cursor: pointer;
+      margin-right: 1rem;
+    }
+    .icon_area {
+      display: none !important;
+    }
+    &:hover {
+      background-color: #f5f5f5;
+      .icon_area {
+        display: flex !important;
+        .icon {
+          cursor: pointer;
+        }
+      }
+    }
+}
+@media only screen and (max-width: 1180px){
+    .book {
+      label {
+        font-size: 1.3rem;
+      }
+      .icon_area {
+        display: flex !important;
+      }
+      .edit {
+        margin-right: 0.8rem;
+        height: 1.5rem;
+        width: auto;
+      }
+      .trash2 {
+        margin-right: 0.8rem;
+        height: 1.5rem;
+        width: auto;
+      }
+    }
+  }
+  @media only screen and (max-width: 720px){
+    .book {
+      label {
+        font-size: 1.2rem;
+      }
+      .icon_area {
+        display: flex !important;
+      }
+      .edit {
+        margin-right: 0.7rem;
+        height: 1.3rem;
+        width: auto;
+      }
+      .trash2 {
+        margin-right: 0.7rem;
+        height: 1.3rem;
+        width: auto;
+      }
+    }
+  }
+  
+.book_form {
+  h2 {
+    text-decoration: underline;
+    color: #025e52;
+  }
+  label {
+    font-size: 0.7rem;
+    font-weight: 500;
+  }
+  .form_control {
+    border-width: 2px;
+    border-radius: 0;
+    border-color: #8c8c8c;
+    color: #000;
+  }
+  .x_circle {
+    cursor: pointer;
+  }
+  .create_button {
+    background-color: #01589d;
+    border-radius: 6px;
+  }
+  //.css-6j8wv5-Input, css-qc6sy-singleValue {
+  //  color: black;
+  //  background-color: white;
+  //}
+  //.css-2613qy-menu {
+  //  color: black !important;
+  //  background-color: white !important;
+  //}
+  .css-6j8wv5-Input {
+    padding: 0;
+    margin: 0;
+  }
+  .css-319lph-ValueContainer {
+    padding: 0px 8px;
+  }
+  .css-1pahdxg-control  {
+    border-radius: 0px;
+    border-color: #8c8c8c;
+    border-width: 2px;
+    height: calc(1.5em + .5rem + 2px);
+  }
+  .css-1s2u09g-control {
+    border-radius: 0px;
+    border-color: #8c8c8c;
+    border-width: 2px;
+    height: calc(1.5em + .5rem + 2px);
+  }
+}

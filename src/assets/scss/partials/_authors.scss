@@ -1,0 +1,110 @@
+.authors {
+  h1 {
+    border-bottom:2px solid;
+  }
+  .plus_icon {
+    width: 1.7rem;
+    height: 1.7rem;
+    stroke: #01589d;
+    stroke-width: 2.5px;
+    cursor: pointer;
+  }
+  label {
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+}
+.author_list_item{
+  margin-left: 12px;
+}
+
+.author {
+  label {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+  .edit {
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+  .trash2 {
+    cursor: pointer;
+    margin-right: 1rem;
+  }
+  .icon_area {
+    display: none !important;
+  }
+  &:hover {
+    background-color: #f5f5f5;
+    .icon_area {
+      display: flex !important;
+      .icon {
+        cursor: pointer;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1180px){
+  .author {
+    label {
+      font-size: 1.3rem;
+    }
+    .icon_area {
+      display: flex !important;
+    }
+    .edit {
+      margin-right: 0.8rem;
+      height: 1.5rem;
+      width: auto;
+    }
+    .trash2 {
+      margin-right: 0.8rem;
+      height: 1.5rem;
+      width: auto;
+    }
+  }
+}
+@media only screen and (max-width: 720px){
+  .author {
+    label {
+      font-size: 1.2rem;
+    }
+    .icon_area {
+      display: flex !important;
+    }
+    .edit {
+      margin-right: 0.7rem;
+      height: 1.3rem;
+      width: auto;
+    }
+    .trash2 {
+      margin-right: 0.7rem;
+      height: 1.3rem;
+      width: auto;
+    }
+  }
+}
+
+.author_form {
+  h2 {
+    text-decoration: underline;
+    color: #025e52;
+  }
+  label {
+    font-size: 0.7rem;
+    font-weight: 500;
+  }
+  .form_control {
+    border-width: 2px;
+    border-radius: 0;
+    border-color: #8c8c8c;
+  }
+  .x_circle {
+    cursor: pointer;
+  }
+  .create_button {
+    background-color: #01589d;
+    border-radius: 6px;
+  }
+}
